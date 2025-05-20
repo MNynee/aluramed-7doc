@@ -1,8 +1,8 @@
 # Projeto do Desafio 7 Days of Code de responsividade durante curso de HTML-CSS na Alura.
 
-<img src="src/images/imagem1_readme.png">
+<img src="src/images/imagem1_readme.png" width="200px">
 
-<img src="src/images/imagem2_readme.png">
+<img src="src/images/imagem2_readme.png" width="400px">
 
 <img src="src/images/imagem3_readme.png">
 
