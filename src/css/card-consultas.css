@@ -1,0 +1,162 @@
+
+.consultas {
+    padding: 1rem 1rem;
+}
+
+.consultas__container {
+    padding-bottom: 1.5rem;
+    margin: 1rem 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.consultas__data {
+    font-weight: 700;
+    color: var(--cor-titulo);
+}
+
+.consultas__container__card {
+    padding: 1rem 0;
+    border-radius: 8px;
+    background-color: var(--bg-secundario);
+}
+
+.consultas__container__card__dados {
+    display: flex;
+    align-items: center;
+}
+
+.consultas__container__card__dados__img {
+    width: 32px;
+    height: 32px;
+    margin: 0 1rem 0 1rem;
+    border-radius: 50%;
+}
+
+.consultas__container__card__dados__texto {
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+}
+
+.consultas__container__card__dados__texto__nome {
+    font-size: .875rem;
+    font-weight: 700;
+    color: var(--cor-titulo);
+    line-height: 160%;
+}
+
+.consultas__container__card__dados__texto__tipo-consulta {
+    font-size: .75rem;
+    color: var(--cor-texto);
+    display: flex;
+    align-items: center;
+}
+
+.consultas__container__card__dados__texto__tipo-consulta__img {
+    margin-right: .5rem;
+}
+
+.consultas__container__card__dados__msg {
+    width: 2rem;
+    height: 2rem;
+    background-color: var(--bg-mensagem);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1rem;
+}
+
+hr {
+    margin: .5rem 0;
+    border: .5px solid var(--borda-botao);
+}
+
+.consultas__container__card__detalhes {
+    display: flex;
+    flex-direction: column;
+}
+
+.consultas__container__card__horario {
+    font-size: .75rem;
+    font-weight: 500;
+    color: var(--cor-titulo);
+    margin-left: 1rem;
+}
+
+.consultas__container__card__botoes {
+    margin: .5rem 1rem 0 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.consultas__container__card__botoes__video-call {
+    text-decoration: none;
+    text-align: center;
+    padding: 1rem;
+    font-size: .875rem;
+    font-weight: 500;
+    color: var(--bg-secundario);
+    background-color: var(--laranja);
+    border-radius: 8px;
+    width: 48%;
+}
+
+.consultas__container__card__botoes--audio-call {
+    background-color: var(--bg-secundario);
+    color: var(--cor-titulo);
+    border: 1px solid var(--borda-botao);
+}
+
+.consultas__container__card__botoes__endereco {
+    width: 90%;
+    margin: .5rem 1rem 0 1rem;
+    text-align: center;
+    background-color: var(--azul);
+}
+
+@media screen and (min-width:768px) {
+    .consultas {
+        padding: 2rem;
+    }
+
+    .consultas__container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 2.5rem;
+        margin: 3rem 2.375rem 2rem 2rem;
+        padding: 0;
+    }
+
+    .consultas__container__card {
+        width: 47%;
+    }
+
+    .consultas__container__card__botoes__endereco {
+        width: 90%;
+    }
+}
+
+@media screen and (min-width:1440px) {
+    .consultas {
+        padding: 2rem;
+    }
+
+    .consultas__container__card {
+        width: 30%;
+    }
+
+    .consultas__container__card__dados__texto__nome {
+        font-size: 1.125rem;
+    }
+
+    .consultas__container__card__horario {
+        font-size: .875rem;
+    }
+
+    
+}

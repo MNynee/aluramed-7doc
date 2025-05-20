@@ -1,0 +1,46 @@
+.botao-flutuante__link {
+    background-color: var(--azul);
+    height: 3.5rem;
+    width: 3.5rem;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 70px;
+    right: 25px;
+    box-shadow: 0 4px 16px rgba(72, 148, 255, 0.5);
+    z-index: 5;
+    cursor: pointer;
+}
+
+/* TERMINAR ALGUM DIA */
+
+.menu-lateral {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    bottom: 150px;
+    right: 25px;
+    gap: 3rem;
+}
+
+.menu-lateral__item__texto {
+    font-size: .75rem;
+    line-height: 160%;
+    background-color: var(--bg-secundario);
+    padding: 0 .5rem;
+    border-radius: 23px;
+}
+
+.menu-lateral__item__local, .menu-lateral__item__video {
+
+    background-color: var(--azul);
+}
+
+@media screen and (min-width:1440px) {
+    .botao-flutuante {
+        display: none;
+    }
+}

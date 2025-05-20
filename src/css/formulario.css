@@ -1,0 +1,99 @@
+.formulario {
+    display: none;
+}
+
+@media screen and (min-width:1440px) {
+    .formulario {
+        display: block;
+        padding: 2rem;
+    }
+
+    .formulario__dado,
+    .formulario__botoes {
+        margin: 2rem 2.5rem 0 2.5rem;
+    }
+
+    .formulario__titulo {
+        font-size: 2rem;
+        font-weight: 700;
+        color: var(--cor-titulo);
+        padding-bottom: 1rem;
+    }
+
+    .formulario__dado {
+        display: flex;
+        align-items: center;
+    }
+
+    .formulario__dado__rotulo {
+        font-size: 1.125rem;
+        font-weight: 500;
+        color: var(--cor-titulo);
+        margin-right: 1rem;
+    }
+
+    .formulario__dado__input {
+        padding: 1rem;
+        border: 1px solid var(--borda-botao);
+        border-radius: 8px;
+        font-size: 1.125rem;
+        outline: none;
+    }
+
+    .formulario__dado__input:enabled {
+        outline: 1px solid var(--borda-botao);
+    }
+
+    .formulario__dado__input:hover {
+        outline: 1px solid var(--cor-texto);
+    }
+
+    .formulario__dado__input:focus {
+        outline: 1px solid var(--azul);
+    }
+
+    .formulario__dado__input::placeholder {
+        font-family: var(--fonte);
+        font-size: 1.125rem;
+    }
+
+    select {
+        appearance: none;
+        background-color: var(--bg-secundario);
+        color: var(--cor-titulo);
+        font-family: var(--fonte);
+        border-radius: 8px;
+    }
+
+    input[type=date] {
+        font-family: var(--fonte);
+    }
+
+    .formulario__dado__input__opcao {
+        font-size: .75rem;
+        border-radius: 8px;
+    }
+
+    .formulario__botoes {
+        display: flex;
+        gap: 2rem;
+    }
+
+    .formulario__botoes__acao {
+        padding: 1rem;
+        font-family: var(--fonte);
+        font-size: 1rem;
+        font-weight: 500;
+        color: var(--bg-secundario);
+        background-color: var(--azul);
+        border: none;
+        border-radius: 8px;
+        width: 20%;
+    }
+
+    .formulario__botoes--limpar {
+        background-color: var(--bg-secundario);
+        color: var(--cor-titulo);
+        border: 1px solid var(--borda-botao);
+    }
+}
