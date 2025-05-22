@@ -15,6 +15,12 @@
     cursor: pointer;
 }
 
+.botao-flutuante__link:hover {
+    background-color: var(--azul-hover);
+    transform: scale(120%);
+    transition: .1s;
+}
+
 /* TERMINAR ALGUM DIA */
 
 .menu-lateral {
@@ -35,7 +41,6 @@
 }
 
 .menu-lateral__item__local, .menu-lateral__item__video {
-
     background-color: var(--azul);
 }
 
