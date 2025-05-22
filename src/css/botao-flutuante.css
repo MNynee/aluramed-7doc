@@ -13,6 +13,7 @@
     box-shadow: 0 4px 16px rgba(72, 148, 255, 0.5);
     z-index: 5;
     cursor: pointer;
+    outline: none;
 }
 
 .botao-flutuante__link:hover {
@@ -27,8 +28,8 @@
     position: fixed;
     bottom: 0;
     right: 0;
-    gap: 2rem;
-    padding: 67vh 50px 170px 0;
+    gap: 1rem;
+    padding: 67vh 25px 170px 0;
     width: 100%;
     height: 100%;
     opacity: 0;
@@ -48,7 +49,7 @@
 
 .menu-lateral__item {
     display: flex;
-    align-items: baseline;
+    align-items: center;
     justify-content: flex-end;
     gap: 1rem;
     transition: .3s ease;
@@ -65,9 +66,10 @@
 }
 
 .menu-lateral__item__local, .menu-lateral__item__video {
-    width: 30px;
-    height: 30px;
+    width: 56px;
+    height: 56px;
     background-color: var(--azul);
+    border-radius: 50%;
 }
 
 .botao-flutuante__local,
