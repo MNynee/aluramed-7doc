@@ -437,7 +437,8 @@
             <form action="" method="post">
                 <h2 class="formulario__titulo">Agendar nova consulta</h2>
 
-                <div class="formulario__dado"><label for="seuNome" class="formulario__dado__rotulo">Nome completo:</label>
+                <div class="formulario__dado"><label for="seuNome" class="formulario__dado__rotulo">Nome
+                        completo:</label>
                     <input type="text" name="seuNome" id="seuNome" class="formulario__dado__input" autocomplete="off"
                         maxlength="40" placeholder="Nome completo" required>
                 </div>
@@ -446,14 +447,17 @@
                     <label for="tipoConsulta" class="formulario__dado__rotulo">Tipo de consulta:</label>
                     <select id="tipoConsulta" name="tipoConsulta" class="formulario__dado__input" required>
                         <option value="" class="formulario__dado__input__opcao" selected>--- Escolha ---</option>
-                        <option value="Consulta na casa do paciente" class="formulario__dado__input__opcao">Consulta na casa do paciente</option>
-                        <option value="Consulta por vídeo" class="formulario__dado__input__opcao">Consulta por vídeo</option>
+                        <option value="Consulta na casa do paciente" class="formulario__dado__input__opcao">Consulta na
+                            casa do paciente</option>
+                        <option value="Consulta por vídeo" class="formulario__dado__input__opcao">Consulta por vídeo
+                        </option>
                     </select>
                 </div>
 
                 <div class="formulario__dado">
                     <label for="dataConsulta" class="formulario__dado__rotulo">Data da consulta:</label>
-                    <input type="date" name="dataConsulta" id="dataConsulta" min="2025-05-15" class="formulario__dado__input" required>
+                    <input type="date" name="dataConsulta" id="dataConsulta" min="2025-05-15"
+                        class="formulario__dado__input" required>
                 </div>
 
                 <div class="formulario__dado">
@@ -473,7 +477,8 @@
 
                 <div class="formulario__dado">
                     <label for="observacoes" class="formulario__dado__rotulo">Observações:</label>
-                    <textarea name="observacoes" id="observacoes" cols="50" rows="5" class="formulario__dado__input"></textarea>
+                    <textarea name="observacoes" id="observacoes" cols="50" rows="5"
+                        class="formulario__dado__input"></textarea>
                 </div>
 
                 <div class="formulario__botoes">
@@ -492,20 +497,29 @@
             <button href="#" class="botao-flutuante__link">
                 <img src="src/images/Adicionar.svg" alt="Botao de adicionar" class="botao-flutuante__link__icone">
             </button>
+
+            <ul class="menu-lateral">
+                <li class="menu-lateral__item">
+                    <span class="menu-lateral__item__texto">Nova consulta na casa do paciente</span>
+                    <div class="menu-lateral__item__local">
+                        <button class="botao-flutuante__local">
+                            <img src="src/images/LocalBranco.svg" alt="">
+                        </button>
+                    </div>
+                </li>
+                <li class="menu-lateral__item">
+                    <span class="menu-lateral__item__texto">Nova consulta por vídeo</span>
+                    <div class="menu-lateral__item__video">
+                        <button class="botao-flutuante__video">
+                            <img src="src/images/CameraWhite.svg" alt="">
+                        </button>
+                    </div>
+                </li>
+            </ul>
         </div>
 
 
-        <ul class="menu-lateral">
-            <li class="menu-lateral__item">
-                <span class="menu-lateral__item__texto">Nova consulta na casa do paciente</span>
-                <div class="menu-lateral__item__local"><button class="botao-flutuante__link"><img
-                            src="src/images/LocalBranco.svg" alt=""></button></div>
-            </li>
-            <li class="menu-lateral__item">
-                <span class="menu-lateral__item__texto">Nova consulta por vídeo</span>
-                <button class="botao-flutuante__link"><span class="menu-lateral__item__video"></span></button>
-            </li>
-        </ul>
+
     </main>
     <section class="navbar">
         <nav>

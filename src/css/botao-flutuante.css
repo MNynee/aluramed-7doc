@@ -21,15 +21,39 @@
     transition: .1s;
 }
 
-/* TERMINAR ALGUM DIA */
-
 .menu-lateral {
-    display: none;
+    display: flex;
     flex-direction: column;
-    position: absolute;
-    bottom: 150px;
-    right: 25px;
-    gap: 3rem;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    gap: 2rem;
+    padding: 67vh 50px 170px 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: .3s ease;
+    background-color: rgba(0, 0, 0, 0.301);
+    z-index: 2;
+}
+
+.botao-flutuante__link:focus + .menu-lateral{
+    opacity: 1;
+	transform: scale(1);
+}
+
+.botao-flutuante__link:focus + .menu-lateral > .menu-lateral__item {
+    transform: scale(1);
+}
+
+.menu-lateral__item {
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-end;
+    gap: 1rem;
+    transition: .3s ease;
+	transform: scale(0);
+    transform-origin: 85% bottom;
 }
 
 .menu-lateral__item__texto {
@@ -41,7 +65,24 @@
 }
 
 .menu-lateral__item__local, .menu-lateral__item__video {
+    width: 30px;
+    height: 30px;
     background-color: var(--azul);
+}
+
+.botao-flutuante__local,
+.botao-flutuante__video {
+    background-color: var(--azul);
+    height: 3.5rem;
+    width: 3.5rem;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 16px rgba(72, 148, 255, 0.5);
+    z-index: 5;
+    cursor: pointer;
 }
 
 @media screen and (min-width:1440px) {
