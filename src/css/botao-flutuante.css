@@ -29,7 +29,7 @@
     bottom: 0;
     right: 0;
     gap: 1rem;
-    padding: 67vh 25px 170px 0;
+    padding: 67vh 25px 280px 0;
     width: 100%;
     height: 100%;
     opacity: 0;
@@ -85,6 +85,13 @@
     box-shadow: 0 4px 16px rgba(72, 148, 255, 0.5);
     z-index: 5;
     cursor: pointer;
+}
+
+.botao-flutuante__local:hover,
+.botao-flutuante__video:hover {
+    background-color: var(--azul-hover);
+    transform: scale(120%);
+    transition: .1s;
 }
 
 @media screen and (min-width:1440px) {
